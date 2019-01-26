@@ -19,6 +19,8 @@ script:
   - mvn verify -Ptest
 
 after_success:
+  - nvm install $NODE_VERSION
+  - npm install 
   - npn run surge
   - surge --project ./target/site --domain mycooldoc.surge.sh
 
