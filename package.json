@@ -4,7 +4,8 @@
   "description": "Wew Calculator Demo",
   "main": "",
   "scripts": {
-    "test": "echo \"Error: no test specified\""
+    "test": "echo \"Error: no test specified\"",
+	"surge" : "surge --project ./target/site --domain mycooldoc.surge.sh"
   },
   "repository": {
     "type": "git",
