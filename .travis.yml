@@ -19,6 +19,7 @@ script:
   - mvn verify -Ptest
 
 after_success:
+  - ls
   - nvm install $NODE_VERSION
   - npm install 
   - npm run surge
