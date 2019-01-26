@@ -1,15 +1,13 @@
 language: java
 jdk: oraclejdk8
 
-node_js: - "0.12"
+node_js: 
+  - "stable"
 
 cache:
   directories:
-   # - $HOME/.m2
-   # - node_modules
-
-script:
-  - mvn verify -Ptest
+    - $HOME/.m2
+    - node_modules
 
 before_install:
   - npm install 
@@ -19,8 +17,11 @@ install :
   - npm install 
   - nvm install
 
-after_success:
-  - surge --project ./target/site --domain mycooldoc.surge.sh
+script:
+  - mvn verify -Ptest
+
+
+
 after_failure:
   #Remove documentation for a failing project
   - surge teardown mycooldoc.surge.sh
