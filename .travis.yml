@@ -6,7 +6,7 @@ env:
   - NODE_VERSION="10.15.0"
 
 
- cache:
+cache:
   directories:
    - $HOME/.m2
    - node_modules
