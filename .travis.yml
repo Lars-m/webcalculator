@@ -4,7 +4,16 @@ jdk: oraclejdk8
 cache:
   directories:
     - $HOME/.m2
+    - node_modules
 
 script:
   - mvn verify -Ptest
 
+before_install:
+  - npm install 
+
+after_success:
+  - surge --project ./target/site --domain mycooldoc.surge.sh
+after_failure:
+  #Remove documentation for a failing project
+  - surge teardown mycooldoc.surge.sh
