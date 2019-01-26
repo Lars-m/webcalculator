@@ -17,5 +17,11 @@ public class CalculatorTest {
     assertEquals(6, res);
   }
   
+  @Test
+  public void testSug(){
+    int res = calc.sub(6, 3);
+    assertEquals(3, res);
+  }
+  
   
 }
