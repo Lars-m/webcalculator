@@ -1,10 +1,10 @@
 {
   "name": "WebCalculator2",
   "version": "1.0.0",
-  "description": "[![Build Status](https://travis-ci.org/Lars-m/webcalculator.svg?branch=master)](https://travis-ci.org/Lars-m/webcalculator)",
-  "main": "index.js",
+  "description": "Wew Calculator Demo",
+  "main": "",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\""
   },
   "repository": {
     "type": "git",
