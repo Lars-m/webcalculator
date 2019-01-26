@@ -15,7 +15,6 @@ before_install:
   - nvm install $NODE_VERSION
   - npm install 
 
-
 script:
   - mvn verify -Ptest site
 
