@@ -5,6 +5,7 @@ jdk: oraclejdk8
 env:
   - NODE_VERSION="10.15.0"
 
+
  cache:
   directories:
    - $HOME/.m2
@@ -22,6 +23,7 @@ after_success:
   - ls
   - ls ./node_modules/.bin/
   - ls node_modules/.bin/
+  - "surge --project ./target/site --domain mycooldoc.surge.sh"
   - npm run surge
   - surge --project ./target/site --domain mycooldoc.surge.sh
 
