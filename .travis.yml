@@ -19,7 +19,7 @@ script:
   - mvn verify -Ptest
 
 after_success:
-  #- npn run surge
+  - npn run surge
   - surge --project ./target/site --domain mycooldoc.surge.sh
 
 after_failure:
