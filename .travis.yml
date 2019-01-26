@@ -16,10 +16,9 @@ before_install:
 
 
 script:
-  - mvn verify -Ptest
+  - mvn verify -Ptest site
 
 after_success:
-  - ls
   - nvm install $NODE_VERSION
   - npm install 
   - npm run surge
