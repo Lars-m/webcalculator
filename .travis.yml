@@ -11,16 +11,16 @@ cache:
 
 before_install:
   - npm install 
-  - nvm install
 
 install : 
   - npm install 
-  - nvm install
 
 script:
   - mvn verify -Ptest
 
-
+after_success:
+  - npn run surge
+  #- surge --project ./target/site --domain mycooldoc.surge.sh
 
 after_failure:
   #Remove documentation for a failing project
