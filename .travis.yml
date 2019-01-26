@@ -13,6 +13,7 @@ before_install:
   - npm install 
 
 after_success:
+  - npm install
   - surge --project ./target/site --domain mycooldoc.surge.sh
 after_failure:
   #Remove documentation for a failing project
