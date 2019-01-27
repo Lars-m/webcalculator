@@ -19,11 +19,9 @@ script:
   - mvn verify -Ptest site
 
 after_success:
-  - ls
-  - ls ./node_modules/.bin/
-  - ls node_modules/.bin/
   - npm run surge
-  - surge --project ./target/site --domain mycooldoc.surge.sh
+  - mvn tomcat7:deploy -Pdeployremote
+  
 
 after_failure:
   #Remove documentation for a failing project
