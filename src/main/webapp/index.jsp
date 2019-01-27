@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Start Page</title>
+        <title>Web Calculator</title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     </head>
     <body style="font-family: sans-serif;padding:2em;">
         <h1>Simple Web API Calculator Page</h1>
+        <!--
         <h2>Use the API like this:</h2>
         <div>
         <code style="font-size: 1.5em;">
@@ -27,5 +28,6 @@
             <li>Division: operation = <code>div</code></li>
           </ul>
         </div>
+        -->
     </body>
 </html>
