@@ -20,7 +20,7 @@ script:
 
 after_success:
   - npm run surge
-  - mvn tomcat7:deploy -Pdeployremote
+  - mvn tomcat7:deploy -Premote
   
 
 after_failure:
