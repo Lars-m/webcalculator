@@ -8,13 +8,16 @@
         <h1>Simple Web API Calculator Page</h1>
         <h2>Use the API like this:</h2>
         <div>
-        <code>
+        <code style="font-size: 1.5em;">
           <%= request.getRequestURL() %>/calculator?operation=add&n1=2&n2=2
         </code>
         </div>
+        <br/>
+        <hr/>
         <div style="margin-top: 1em;">
           Try it: <a href="<%= request.getRequestURL() %>/calculator?operation=add&n1=2&n2=2"><%= request.getRequestURL() %>/calculator?operation=add&n1=2&n2=2</a>
         </div>
+        <hr/>
         <div>
           <h4>Supported Operations</h4>
           <ul>
