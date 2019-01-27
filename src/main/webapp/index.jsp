@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Start Page</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body style="font-family: sans-serif;padding:2em;">
+        <h1>Simple Web API Calculator Page</h1>
+        <h2>Use the API like this:</h2>
+        <div>
+        <code>
+          <%= request.getRequestURL() %>/calculator?operation=add&n1=2&n2=2
+        </code>
+        </div>
+        <div style="margin-top: 1em;">
+          Try it: <a href="<%= request.getRequestURL() %>/calculator?operation=add&n1=2&n2=2"><%= request.getRequestURL() %>/calculator?operation=add&n1=2&n2=2</a>
+        </div>
+        <div>
+          <h4>Supported Operations</h4>
+          <ul>
+            <li>Add: operation = <code>add</code></li>
+            <li>Subtract: operation = <code>sub</code></li>
+            <li>Multiply: operation = <code>mul</code></li>
+            <li>Division: operation = <code>div</code></li>
+          </ul>
+        </div>
+    </body>
+</html>

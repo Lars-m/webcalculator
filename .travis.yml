@@ -16,11 +16,11 @@ before_install:
   - npm install 
 
 script:
-  - mvn verify -Ptest site
+  - mvn verify -Ptest site tomcat7:deploy -Premote
 
 after_success:
   - npm run surge
-  - mvn tomcat7:deploy -Premote
+ 
   
 
 after_failure:

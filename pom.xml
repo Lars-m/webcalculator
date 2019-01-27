@@ -306,7 +306,7 @@
               <url>https://deploy.mydemos.dk/manager/text</url>  
               <server>TomcatServer</server>
               <path>/calculator</path>
-              <username>admin </username>
+              <username>admin</username>
               <password>dat_lyngby_2800</password>
               <update>true</update>
             </configuration>  
