@@ -9,6 +9,19 @@
 
   <name>WebCalculator</name>
   
+  <description>
+    Sample project used on cphbusiness.dk, computer science (Datamatiker) to illustrate, test, Maven, CI, and and Continuous Delivery
+  </description>
+  
+  <developers>
+    <developer>
+      <name>Lars Mortensen</name>
+      <email>lam@cphbusiness.dk</email>
+      <organization>Cphbusiness</organization>
+      <organizationUrl>https://cphbusiness.dk</organizationUrl>
+    </developer>
+  </developers>
+  
   <reporting>
     <plugins>
       <plugin>
