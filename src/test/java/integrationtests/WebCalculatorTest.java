@@ -29,5 +29,11 @@ public class WebCalculatorTest {
     assertEquals("Result of: 6-3= 3", res);
   }
   
+  @Test
+  public void testWebMul() throws IOException{
+    String res = client.makeHttpRequest("?operation=mul&n1=6&n2=12");
+    assertEquals("Result of: 6*12= 72", res);
+  }
+  
   
 }

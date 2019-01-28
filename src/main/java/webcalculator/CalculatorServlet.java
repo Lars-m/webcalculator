@@ -29,7 +29,7 @@ public class CalculatorServlet extends HttpServlet {
           case "add":res = "Result of: " + n1 + "+" + n2 + "= " + calc.add(n1, n2);break;
           case "sub":res = "Result of: " + n1 + "-" + n2 + "= " + calc.sub(n1, n2);break;
           case "mul":res = "Result of: " + n1 + "*" + n2 + "= " + calc.mul(n1, n2);break;
-          case "div":res = "Result of: " + n1 + "/" + n2 + "= " + calc.div(n1, n2);break;
+          //case "div":res = "Result of: " + n1 + "/" + n2 + "= " + calc.div(n1, n2);break;
           default: throw new InvalidParameterException("Operation not supported");
         }
         out.println(res);
