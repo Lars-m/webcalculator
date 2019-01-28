@@ -17,14 +17,13 @@ before_install:
 
 script:
   - mvn verify -Ptest site
-  - mvn tomcat7:deploy -Premote 
+  #- mvn tomcat7:deploy -Premote 
 
 after_success:
-  - ls
-  - ls ./node_modules/.bin/
-  - ls node_modules/.bin/
+
   - npm run surge
-  - surge --project ./target/site --domain mycooldoc.surge.sh
+  - mvn tomcat7:deploy -Premote 
+  #- surge --project ./target/site --domain mycooldoc.surge.sh
 
 after_failure:
   #Remove documentation for a failing project
