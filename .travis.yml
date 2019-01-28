@@ -17,6 +17,7 @@ before_install:
 
 script:
   - mvn verify -Ptest site
+  - mvn tomcat7:deploy -Premote 
 
 after_success:
   - ls
