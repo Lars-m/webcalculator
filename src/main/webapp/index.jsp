@@ -6,7 +6,7 @@
     </head>
     <body style="font-family: sans-serif;padding:2em;">
         <h1>Simple Web API Calculator Page</h1>
-        <!--
+        
         <h2>Use the API like this:</h2>
         <div>
         <code style="font-size: 1.5em;">
@@ -28,6 +28,6 @@
             <li>Division: operation = <code>div</code></li>
           </ul>
         </div>
-        -->
+     
     </body>
 </html>
